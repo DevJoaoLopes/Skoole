@@ -1,0 +1,83 @@
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+  },
+  title: {
+    fontSize: 30,
+    alignSelf: 'center',
+    color: '#4B0082',
+    fontWeight: 'bold',
+    fontFamily: 'Roboto',
+  },
+  cardT1: {
+    marginTop: 20,
+    borderWidth: 2,
+    borderColor: '#4B0082',
+    width: '90%',
+    height: 170,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    alignSelf: 'center',
+  },
+  cardT2: {
+    marginTop: 20,
+    borderWidth: 2,
+    borderColor: '#4B0082',
+    width: '90%',
+    height: 200,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    alignSelf: 'center',
+  },
+  cardT3: {
+    marginTop: 20,
+    marginBottom: 20,
+    borderWidth: 2,
+    borderColor: '#4B0082',
+    width: '90%',
+    height: 170,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    alignSelf: 'center',
+  },
+  cardSubtitleT1: {
+    top: 0,
+    right: 0,
+    left: 0,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    backgroundColor: '#4B0082',
+    height: 60,
+  },
+  cardSubtitleT2: {
+    top: 0,
+    right: 0,
+    left: 0,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    backgroundColor: '#4B0082',
+    height: 60,
+  },
+  cardTable: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginBottom: '1.5%',
+  },
+  cardTableTitle: {
+    fontSize: 18,
+    color: '#4B0082',
+  },
+  alignContentItems: {
+    alignItems: 'center',
+  },
+  paddingText: {
+    paddingTop: 6,
+    fontWeight: 'bold',
+    fontSize: 14,
+    color: '#212f3d',
+  },
+});
