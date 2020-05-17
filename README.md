@@ -22,13 +22,23 @@ Este projeto tem como finalidade a participação do Hackathon Univem 2019.
 
 ## Começando
 
-OBS.: É necessário estar com o ambiente configurado em seu PC para executar o APP.
-
 Para conseguir executar o projeto, clone o projeto e siga os passos abaixo.
 
 ### Instalação
 
-1. Para instalar e utilizar esse projeto o processo é bem simples, utilize os comandos:
+1. É necessário possuir as seguintes ferramentas:
+
+- Chocolatey
+- Node.js
+- Yarn 1
+- Python 2
+- JDK 8
+- Android Studio e dependências ou Genymotion
+
+Site tutorial para guia (ao entrar, selecione o sistema operacional que está utilizando e veja o passo a passo)**
+- https://react-native.rocketseat.dev/
+
+2. Após ambiente configurado, para instalar e utilizar esse projeto o processo é bem simples, utilize os comandos:
 
 ```sh
 yarn install
@@ -48,6 +58,12 @@ Para iOS **
 
 ```sh
 yarn ios
+```
+
+Caso exiba um erro semelhante a este após executar: "TypeError: undefined is not an object (evaluating '_core.pathUtils.urlToPathAndParams')" **
+
+```sh
+yarn add @react-navigation/native
 ```
 
 ---
