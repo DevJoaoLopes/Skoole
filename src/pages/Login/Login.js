@@ -65,7 +65,7 @@ const Login = ({ navigation }) => {
           secureTextEntry={true} 
           leftIcon={
             <Icon
-              name='user'
+              name='lock'
               size={20}
               color='black'
             />
