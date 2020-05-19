@@ -10,10 +10,11 @@ const Container = styled.View`
 
 const Card = styled.View`
   width: 90%;
-  height: 95%;
+  height: 40%;
   backgroundColor: white;
   borderRadius: 5;
   justifyContent: center;
+  marginTop: 50;
 `;
 
 const Logo = styled.View`
@@ -49,11 +50,17 @@ const Link = styled.Text`
   bottom: 2%;
 `;
 const styles = StyleSheet.create({
+  campusInputContainer: {
+    width: '80%',
+    height: '40%',
+    alignSelf: 'center',
+    marginTop: -30,
+  },
     textInput: {
     width: '80%',
     height: '0%',
     alignSelf: 'center',
-    marginTop: 20,
+    marginTop: 50,
   },
   button: {
     position: 'absolute',

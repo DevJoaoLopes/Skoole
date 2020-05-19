@@ -22,6 +22,7 @@
     "react": "16.9.0",
     "react-dom": "^16.10.2",
     "react-native": "0.61.4",
+    "react-native-elements": "^2.0.0",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-navigation": "^2.27.9",
     "react-native-paper": "^3.0.0",
