@@ -1,80 +1,51 @@
-<!--
-*** Obrigado por estar vendo o nosso README.
--->
+![image info](./src/assets/components/Header/assets/images/logo_transparent.png "Skoole")
 
-<!-- TABLE OF CONTENTS -->
+## Index
 
-## Tabela de Conteúdo
-
-- [Tabela de Conteúdo](#tabela-de-conte%C3%BAdo)
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Começando](#come%C3%A7ando)
-  - [Instalação](#instala%C3%A7%C3%A3o)
-- [Contato](#contato)
+- [Index](#tabela-de-conte%C3%BAdo)
+- [About](#sobre-o-projeto)
+- [Getting Started](#come%C3%A7ando)
+  - [Install](#instala%C3%A7%C3%A3o)
 
 <!-- ABOUT THE PROJECT -->
 
-## Sobre o Projeto
+## About
 
-Este projeto tem como finalidade a participação do Hackathon Univem 2019. 
+Application to help students to enter colleges, integrating them with communities, study groups and making educational materials available.
+
 
 <!-- GETTING STARTED -->
 
-## Começando
+## Getting Started
 
 Para conseguir executar o projeto, clone o projeto e siga os passos abaixo.
 
 ### Instalação
 
-1. É necessário possuir as seguintes ferramentas:
+1. You must have the following tools:
 
-- Chocolatey
-- Node.js
-- Yarn 1
-- Python 2
+- Node.js + NPM
+- React Native
 - JDK 8
-- Android Studio e dependências ou Genymotion
+- Android Studio / Genymotion for Emulator
 
-Site tutorial para guia (ao entrar, selecione o sistema operacional que está utilizando e veja o passo a passo)**
-- https://react-native.rocketseat.dev/
-
-2. Após ambiente configurado, para instalar e utilizar esse projeto o processo é bem simples, utilize os comandos:
+2. Run Commands: 
 
 ```sh
 yarn install
 ```
 
 ```sh
-yarn start
+yarn start --reset-cache
 ```
-
-Para android **
+**Android**
 
 ```sh
 yarn android 
 ```
 
-Para iOS **
+**IOS**
 
 ```sh
 yarn ios
 ```
-
-Caso exiba um erro semelhante a este após executar: "TypeError: undefined is not an object (evaluating '_core.pathUtils.urlToPathAndParams')" **
-
-```sh
-yarn add @react-navigation/native
-```
-
----
-
-
-## Contato
-
-Hackathon 2019
-
-João Victor  
-João Pedro  
-Pedro  
-Otávio  
-Marcos
