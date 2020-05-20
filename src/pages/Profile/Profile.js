@@ -4,7 +4,8 @@ import {
 } from 'react-native';
 import styles from './styles';
 import Header from '../../assets/components/Header';
-import user from '../../assets/images/user.png';
+// import user from '../../assets/images/user.png';
+import profile from '../../assets/images/profile.png';
 
 const Profile = () => (
   <View style={styles.container}>
@@ -15,10 +16,10 @@ const Profile = () => (
         <View style={styles.viewImage}>
           <Image
             style={styles.image}
-            source={user}
+            source={profile}
           />
           <Text style={styles.textName}>
-            Jose Henrique da Silva
+            João Victor Piga
           </Text>
         </View>
         <View style={styles.viewPoints}>

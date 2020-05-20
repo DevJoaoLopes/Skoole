@@ -28,9 +28,6 @@ export const DashboardTabs = createBottomTabNavigator({
   defaultNavigationOptions: ({ navigation }) => ({
     tabBarIcon: ({ focused }) => <TabBarIcon navigation={navigation} focused={focused} />,
   }),
-  /**
-   * Tab theme colors
-   */
   tabBarOptions: {
     activeTintColor: '#ffffff',
     inactiveTintColor: 'rgba(255, 255, 255, 0.4)',

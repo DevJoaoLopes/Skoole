@@ -7,13 +7,14 @@ export default StyleSheet.create({
   },
   viewImage: {
     width: '100%',
-    height: 120,
+    height: 200,
     alignItems: 'center',
   },
   image: {
-    flex: 3,
+    flex: 2,
     resizeMode: 'contain',
     color: '#4B0082',
+    borderRadius: 1000,
   },
   textName: {
     fontSize: 18,
