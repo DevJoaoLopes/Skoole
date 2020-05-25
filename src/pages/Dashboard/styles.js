@@ -12,7 +12,16 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Roboto',
   },
-  cardT1: {
+  cardSubtitle: {
+    top: 0,
+    right: 0,
+    left: 0,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    backgroundColor: '#4B0082',
+    height: 35,
+  },
+  cardCronograma: {
     marginTop: 20,
     borderWidth: 2,
     borderColor: '#4B0082',
@@ -21,20 +30,10 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 5,
     alignSelf: 'center',
+    overflow: 'hidden',
   },
-  cardT2: {
+  cardAgenda: {
     marginTop: 20,
-    borderWidth: 2,
-    borderColor: '#4B0082',
-    width: '90%',
-    height: 200,
-    backgroundColor: 'white',
-    borderRadius: 5,
-    alignSelf: 'center',
-  },
-  cardT3: {
-    marginTop: 20,
-    marginBottom: 20,
     borderWidth: 2,
     borderColor: '#4B0082',
     width: '90%',
@@ -42,42 +41,17 @@ export default StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 5,
     alignSelf: 'center',
+    overflow: 'hidden',
   },
-  cardSubtitleT1: {
-    top: 0,
-    right: 0,
-    left: 0,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    backgroundColor: '#4B0082',
-    height: 60,
-  },
-  cardSubtitleT2: {
-    top: 0,
-    right: 0,
-    left: 0,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    backgroundColor: '#4B0082',
-    height: 60,
-  },
-  cardTable: {
-    alignItems: 'center',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginBottom: '1.5%',
-  },
-  cardTableTitle: {
-    fontSize: 18,
-    color: '#4B0082',
-  },
-  alignContentItems: {
-    alignItems: 'center',
-  },
-  paddingText: {
-    paddingTop: 6,
+  cardText: {
+    fontSize: 20,
+    alignSelf: 'center',
+    color: '#FFFFFF',
     fontWeight: 'bold',
-    fontSize: 14,
-    color: '#212f3d',
+    fontFamily: 'Roboto',
+  },
+  imgCronograma: {
+    width: '100%',
+    height: 140,
   },
 });

@@ -25,7 +25,7 @@ const Header = ({ children, style = {} }) => (
         </View>
         <View style={styles.itemContainer}>
           <Text style={styles.textHeader}>
-              Skole
+              Skoole
           </Text>
         </View>
       </Appbar.Header>

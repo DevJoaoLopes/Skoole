@@ -4,14 +4,14 @@ import {
 } from 'react-native';
 import styles from './styles';
 import Header from '../../assets/components/Header';
-// import user from '../../assets/images/user.png';
 import profile from '../../assets/images/profile.png';
+import points from '../../assets/images/points.png';
 
 const Profile = () => (
   <View style={styles.container}>
     <Header />
 
-    <View style={{ flex: 8 }}>
+    <View style={{ flex: 13 }}>
       <ScrollView>
         <View style={styles.viewImage}>
           <Image
@@ -21,14 +21,14 @@ const Profile = () => (
           <Text style={styles.textName}>
             João Victor Piga
           </Text>
+          <Text style={styles.textSchool}>Centro Universitário Eurípides de Marília</Text>
         </View>
+
         <View style={styles.viewPoints}>
-          <Text style={styles.textNumber}>78</Text>
+          <View style={{flexDirection: 'row', alignContent: "center"}}>
+            <Image source={points} style={styles.imgPoints}></Image><Text style={styles.textNumber}>78</Text>
+          </View>
           <Text style={styles.textPoint}>Pontos</Text>
-        </View>
-        <View style={styles.viewPoints}>
-          <Text style={styles.textDesc}>Questoes mais respondidas: Matemática</Text>
-          <Text style={styles.textQtd}>Quantidade de questoes respondidas: 237</Text>
         </View>
       </ScrollView>
     </View>

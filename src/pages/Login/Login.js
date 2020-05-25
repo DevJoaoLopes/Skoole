@@ -25,7 +25,7 @@ const Login = ({ navigation }) => {
       });
       setLoadingButton(false);
       if (response.data.data !== 'Dados inválidos') {
-        navigation.navigate('Profile');
+        navigation.navigate('Dashboard');
       } else {
         console.log('erro');
       }

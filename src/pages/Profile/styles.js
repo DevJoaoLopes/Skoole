@@ -7,7 +7,7 @@ export default StyleSheet.create({
   },
   viewImage: {
     width: '100%',
-    height: 200,
+    height: 300,
     alignItems: 'center',
   },
   image: {
@@ -16,17 +16,20 @@ export default StyleSheet.create({
     color: '#4B0082',
     borderRadius: 1000,
   },
+  imgPoints: {
+    height: 90,
+    width: 90,
+  },
   textName: {
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: 'bold',
     color: 'black',
-    marginTop: 20,
+    marginTop: 0,
   },
   textNumber: {
     fontWeight: 'bold',
-    fontSize: 70,
+    fontSize: 57,
     color: 'green',
-    marginBottom: 10,
   },
   viewPoints: {
     width: '100%',
@@ -50,5 +53,9 @@ export default StyleSheet.create({
     fontSize: 18,
     color: 'black',
     marginBottom: 10,
+  },
+  textSchool: {
+    fontSize: 10,
+    color: 'gray',
   },
 });
