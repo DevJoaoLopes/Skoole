@@ -6,7 +6,7 @@ export default StyleSheet.create({
         backgroundColor: '#ffffff',
     },
     title: {
-        fontSize: 30,
+        fontSize: 32,
         alignContent: 'flex-start',
         marginLeft: 10,
         color: '#4B0082',
@@ -15,19 +15,27 @@ export default StyleSheet.create({
     },
     cards: {
         flexDirection: 'row', 
-        alignContent: "center",
+        alignItems: "center",
         marginTop: 10,
         borderWidth: 2,
         borderColor: '#4B0082',
-        width: '98%',
-        height: 120,
+        width: '80%',
+        height: 70,
         backgroundColor: 'white',
         borderRadius: 5,
         alignSelf: 'center',
         overflow: 'hidden',
     },
     cardIcons: {
-        height: 120,
-        width: 100,
+        marginLeft: 7,
+        height: 50,
+        width: 50,
     },
+    cardText:{
+        alignSelf: 'center',
+        fontSize: 25,
+        marginLeft: 10,
+        color: '#4B0082',
+        fontFamily: 'Roboto',
+    }
 });
