@@ -4,6 +4,7 @@ import Dashboard from './Dashboard';
 import Profile from '../Profile';
 import TabBarIcon from '../../assets/components/TabBarIcon';
 import { CommunityStack } from '../Community';
+import { ContentStack } from '../Content';
 
 export const DashboardTabs = createBottomTabNavigator({
   Home: {
@@ -12,16 +13,22 @@ export const DashboardTabs = createBottomTabNavigator({
       tabBarLabel: 'Home',
     },
   },
+  Content: {
+      screen: ContentStack,
+      navigationOptions: {
+        tabBarLabel: 'Conteúdos',
+      },
+    },
   Community: {
     screen: CommunityStack,
     navigationOptions: {
-      tabBarLabel: 'Community',
+      tabBarLabel: 'Comunidade',
     },
   },
   Profile: {
     screen: Profile,
     navigationOptions: {
-      tabBarLabel: 'Profile',
+      tabBarLabel: 'Perfil',
     },
   },
 }, {
