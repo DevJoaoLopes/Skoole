@@ -4,34 +4,37 @@ import { Image } from 'react-native';
 import {
   Container, Card, Link, styles, Logo,
 } from './styles';
+import WarningModal from '../../assets/components/Modal/WarningModal';
 import api from '../../services/api';
 import LogoImg from '../../assets/components/Header/assets/images/logo_transparent.png';
 
 const Login = ({ navigation }) => {
   const [statusError, setStatusError] = useState(false);
   const [loadingButton, setLoadingButton] = useState(false);
+  const [modalVisible, setModalVisible] = useState(false);
   const [textEmail, setTextEmail] = useState('');
   const [textPass, setTextPass] = useState('');
 
   const auth = async () => {
     if (textEmail.length === 0 || textPass.length === 0) {
-      setStatusError(true);
-    }
-    try {
-      setLoadingButton(true);
-      const response = await api.post('/autenticar', {
-        email: textEmail,
-        senha: textPass,
-      });
       setLoadingButton(false);
-      if (response.data.data !== 'Dados inválidos') {
-        navigation.navigate('Dashboard');
-      } else {
-        console.log('erro');
+      setStatusError(true);
+    } else {
+      try {
+        setLoadingButton(true);
+        const response = await api.post('/autenticar', {
+          email: textEmail,
+          senha: textPass,
+        });
+        setLoadingButton(false);
+        if (response.data.data !== 'Dados inválidos') {
+          navigation.navigate('Dashboard');
+        } else {
+          setModalVisible(true);
+        }
+      } catch (err) {
+        setModalVisible(true);
       }
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.log(error);
     }
   };
 
@@ -89,6 +92,12 @@ const Login = ({ navigation }) => {
         </Button>
         <Link onPress={() => navigation.navigate('Register')} href={{}}>Não tem cadastro? Cadastre-se</Link>
       </Card>
+      <WarningModal
+        visible={modalVisible}
+        onDismiss={() => setModalVisible(false)}
+        message="Usuário ou senha incorretos"
+        btnText="tentar novamente"
+      />
     </Container>
   );
 };
