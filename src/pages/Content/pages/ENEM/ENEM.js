@@ -3,12 +3,10 @@ import {
   View, Text, TouchableOpacity, ScrollView, Image,
 } from 'react-native';
 import styles from './styles';
-import Header from '../../../../assets/components/Header';
 import Question1 from '../../../../assets/images/Question1.png';
 
 const ENEM = ({ navigation }) => (
   <View style={styles.container}>
-    <Header/>
     <View style={{ flex: 10 }}>
       <View style={styles.titleCard}>
         <Text style={styles.title}>Simulado ENEM 2019</Text>
@@ -58,11 +56,15 @@ const ENEM = ({ navigation }) => (
             </View>
           </TouchableOpacity>
         </View>
+
+        <View>
+          <TouchableOpacity style={styles.navButtons}>
+            <View>
+              <Text style={styles.navButtonsText}>Próxima questão</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
       </ScrollView>
-
-      <View style={styles.correctionCard}>
-
-      </View>
       
     </View>
   </View>

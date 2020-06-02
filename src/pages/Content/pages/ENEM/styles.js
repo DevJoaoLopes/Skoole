@@ -58,7 +58,22 @@ export default StyleSheet.create({
         color: '#4B0082',
         fontSize: 50,
     },
-    correctionCard: {
-
+    navButtons:{
+        alignItems: "center",
+        marginLeft: 9,
+        marginRight: 9,
+        marginTop: 7,
+        marginBottom: 7,
+        borderWidth: 2,
+        borderColor: '#4B0082',
+        borderRadius: 5,
+        backgroundColor: '#4B0082',
+    },
+    navButtonsText: {
+        height: 50,
+        fontSize: 15,
+        alignSelf: 'center',
+        padding: '4%',
+        color: '#FFFFFF',
     },
 });

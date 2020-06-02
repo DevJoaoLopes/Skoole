@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, Text, TouchableOpacity, ScrollView, Image
+  View, Text, TouchableOpacity, ScrollView, Image, ImageBackground, ImageBackgroundBase
 } from 'react-native';
 import styles from './styles';
 import Header from '../../../../assets/components/Header';
@@ -18,15 +18,23 @@ const Simulados = ({ navigation }) => (
         <Text style={styles.vestText}>Vestibulares</Text>
         <ScrollView>
           <View style={{flexDirection: 'row', }}>
-            <TouchableOpacity onPress={() => navigation.navigate('ENEM')}>
+            <TouchableOpacity onPress={() => navigation.navigate('EnemTests')}>
               <View style={styles.cards}>
-                <Image source={ENEM} style={styles.cardIcons}></Image>
+                <ImageBackground source={ENEM} style={styles.cardIcons}>
+                  <View style={styles.cardView}>
+                    <Text style={styles.cardText}>ENEM</Text>
+                  </View>
+                </ImageBackground>
               </View>
             </TouchableOpacity>
 
             <TouchableOpacity>
               <View style={styles.cards}>
-                <Image source={FUVEST} style={styles.cardIcons}></Image>
+                <ImageBackground source={FUVEST} style={styles.cardIcons}>
+                  <View style={styles.cardView}>
+                    <Text style={styles.cardText}>FUVEST</Text>
+                  </View>
+                </ImageBackground>
               </View>
             </TouchableOpacity>
           </View>
@@ -34,13 +42,21 @@ const Simulados = ({ navigation }) => (
           <View style={{flexDirection: 'row', }}>
             <TouchableOpacity>
               <View style={styles.cards}>
-                <Image source={UNIVEM} style={styles.cardIcons}></Image>
+                <ImageBackground source={UNIVEM} style={styles.cardIcons}>
+                  <View style={styles.cardView}>
+                    <Text style={styles.cardText}>UNIVEM</Text>
+                  </View>
+                </ImageBackground>
               </View>
             </TouchableOpacity>
 
             <TouchableOpacity>
               <View style={styles.cards}>
-                <Image source={UEL} style={styles.cardIcons}></Image>
+                <ImageBackground source={UEL} style={styles.cardIcons}>
+                  <View style={styles.cardView}>
+                    <Text style={styles.cardText}>UEL</Text>
+                  </View>
+                </ImageBackground>
               </View>
             </TouchableOpacity>
           </View>
@@ -48,13 +64,21 @@ const Simulados = ({ navigation }) => (
           <View style={{flexDirection: 'row', }}>
             <TouchableOpacity>
               <View style={styles.cards}>
-                <Image source={UENP} style={styles.cardIcons}></Image>
+                <ImageBackground source={UENP} style={styles.cardIcons}>
+                  <View style={styles.cardView}>
+                    <Text style={styles.cardText}>UENP</Text>
+                  </View>
+                </ImageBackground>
               </View>
             </TouchableOpacity>
 
             <TouchableOpacity>
               <View style={styles.cards}>
-                <Image source={UNICAMP} style={styles.cardIcons}></Image>
+                <ImageBackground source={UNICAMP} style={styles.cardIcons}>
+                  <View style={styles.cardView}>
+                    <Text style={styles.cardText}>UNICAMP</Text>
+                  </View>
+                </ImageBackground>
               </View>
             </TouchableOpacity>
           </View>

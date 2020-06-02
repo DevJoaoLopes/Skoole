@@ -20,49 +20,7 @@ const Content = ({ navigation }) => (
               <View>
                 <Text style={styles.title}>Disciplinas</Text>
               </View>
-
-              <TouchableOpacity>
-                <View style={styles.cards}>
-                  <Image source={Math} style={styles.cardIcons}></Image>
-                  <Text style={styles.cardText}>Matemática</Text>
-                </View>
-              </TouchableOpacity>
               
-              <TouchableOpacity>
-                <View style={styles.cards}>
-                  <Image source={Physics} style={styles.cardIcons}></Image>
-                  <Text style={styles.cardText}>Física</Text>
-                </View>
-              </TouchableOpacity>
-
-              <TouchableOpacity>
-                <View style={styles.cards}>
-                  <Image source={Chemistry} style={styles.cardIcons}></Image>
-                  <Text style={styles.cardText}>Química</Text>
-                </View>
-              </TouchableOpacity>
-
-              <TouchableOpacity>
-                <View style={styles.cards}>
-                  <Image source={Biology} style={styles.cardIcons}></Image>
-                  <Text style={styles.cardText}>Biologia</Text>
-                </View>
-              </TouchableOpacity>
-
-              <TouchableOpacity>
-                <View style={styles.cards}>
-                  <Image source={History} style={styles.cardIcons}></Image>
-                  <Text style={styles.cardText}>História</Text>
-                </View>
-              </TouchableOpacity>
-
-              <TouchableOpacity>
-                <View style={styles.cards}>
-                  <Image source={Tecnology} style={styles.cardIcons}></Image>
-                  <Text style={styles.cardText}>Tecnologia</Text>
-                </View>
-              </TouchableOpacity>
-
               <TouchableOpacity onPress={() => navigation.navigate('Simulados')}>
                 <View style={styles.cards}>
                   <Image source={Exams} style={styles.cardIcons}></Image>
