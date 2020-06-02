@@ -18,8 +18,18 @@ export default StyleSheet.create({
         overflow: 'hidden',
     },
     cardIcons: {
-        height: 190,
-        width: 190,
+        height: '103%',
+        width: '103%',
+    },
+    cardText: {
+        fontSize: 20,
+        alignSelf: 'center',
+        color: '#FFFFFF',
+    },
+    cardView: {
+        top: '83%',
+        height: '16%',
+        backgroundColor: '#4B0082',
     },
     vestText:{
         alignSelf: 'center',
