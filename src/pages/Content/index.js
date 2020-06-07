@@ -5,6 +5,7 @@ import ENEM from './pages/ENEM';
 import EnemTests from './pages/EnemTests';
 import EnemAnswers from './pages/EnemAnswers';
 
+// eslint-disable-next-line import/prefer-default-export
 export const ContentStack = createStackNavigator({
   Content: {
     screen: Content,
@@ -15,25 +16,25 @@ export const ContentStack = createStackNavigator({
   Simulados: {
     screen: Simulados,
     navigationOptions: {
-        header: null,
+      header: null,
     },
   },
   EnemTests: {
     screen: EnemTests,
-      navigationOptions: {
-          header: null,
-      },
+    navigationOptions: {
+      header: null,
+    },
   },
   ENEM: {
     screen: ENEM,
     navigationOptions: {
-        header: null,
+      header: null,
     },
   },
   EnemAnswers: {
     screen: EnemAnswers,
     navigationOptions: {
-        header: null,
+      header: null,
     },
   },
 });

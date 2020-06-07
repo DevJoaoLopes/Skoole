@@ -2,7 +2,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import React from 'react';
 import Profile from '../Profile';
 import TabBarIcon from '../../assets/components/TabBarIcon';
-import { CommunityStack } from '../Community';
+// import { CommunityStack } from '../Community';
 import { ContentStack } from '../Content';
 import { DashboardStack } from './pages/index';
 
@@ -19,12 +19,12 @@ export const DashboardTabs = createBottomTabNavigator({
       tabBarLabel: 'Conteúdos',
     },
   },
-  Community: {
-    screen: CommunityStack,
-    navigationOptions: {
-      tabBarLabel: 'Comunidade',
-    },
-  },
+  // Community: {
+  //   screen: CommunityStack,
+  //   navigationOptions: {
+  //     tabBarLabel: 'Comunidade',
+  //   },
+  // },
   Profile: {
     screen: Profile,
     navigationOptions: {
