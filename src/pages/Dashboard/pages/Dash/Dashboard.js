@@ -23,7 +23,7 @@ const Dashboard = ({ navigation }) => (
             <Text style={styles.cardText}>Cronograma</Text>
           </View>
           <View style={{ alignSelf: 'stretch' }}>
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity onPress={() => navigation.navigate('Cronograma')}>
               <Image style={styles.imgCronograma} source={Cronograma} />
             </TouchableOpacity>
           </View>
