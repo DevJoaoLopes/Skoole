@@ -25,8 +25,9 @@ const Profile = () => (
         </View>
 
         <View style={styles.viewPoints}>
-          <View style={{flexDirection: 'row', alignContent: "center"}}>
-            <Image source={points} style={styles.imgPoints}></Image><Text style={styles.textNumber}>78</Text>
+          <View style={{ flexDirection: 'row', alignContent: 'center' }}>
+            <Image source={points} style={styles.imgPoints} />
+            <Text style={styles.textNumber}>78</Text>
           </View>
           <Text style={styles.textPoint}>Pontos</Text>
         </View>
