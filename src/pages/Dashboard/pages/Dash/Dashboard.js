@@ -18,19 +18,19 @@ const Dashboard = ({ navigation }) => (
               <Text style={styles.cardText}>Cronograma</Text>
             </View>
             <View style={{ alignSelf: 'stretch' }}>
-              <TouchableOpacity onPress={() => {}}>
+              <TouchableOpacity onPress={() => navigation.navigate('Cronograma')}>
                 <Image style={styles.imgCronograma} source={Cronograma} />
               </TouchableOpacity>
             </View>
-          </View>
-          <View style={styles.cardAgenda}>
-            <View style={styles.cardSubtitle}>
-              <Text style={styles.cardText}>Sua agenda de Estudo</Text>
-            </View>
-            <View style={{ alignSelf: 'stretch' }}>
-              <TouchableOpacity onPress={() => navigation.navigate('Schedule')}>
-                <Image style={styles.imgCronograma} source={Agenda} />
-              </TouchableOpacity>
+            <View style={styles.cardAgenda}>
+              <View style={styles.cardSubtitle}>
+                <Text style={styles.cardText}>Sua agenda de Estudo</Text>
+              </View>
+              <View style={{ alignSelf: 'stretch' }}>
+                <TouchableOpacity onPress={() => navigation.navigate('Schedule')}>
+                  <Image style={styles.imgCronograma} source={Agenda} />
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </ScrollView>
