@@ -9,23 +9,23 @@ export default StyleSheet.create({
     width: '100%',
     alignItems: 'center',
   },
-  dataText:{
+  dataText: {
     marginTop: 30,
     marginLeft: 20,
     color: '#008BD9',
-    fontSize: 17
+    fontSize: 17,
   },
-  vestData:{
+  vestData: {
     marginLeft: 20,
     marginTop: 5,
-    fontSize: 15  
+    fontSize: 15,
   },
-  dataLine:{
+  dataLine: {
     borderBottomWidth: 1,
     borderBottomColor: '#D7D7D7',
     marginBottom: 5,
   },
-  titleText:{
+  titleText: {
     color: '#008BD9',
     fontSize: 17,
     marginTop: 15,

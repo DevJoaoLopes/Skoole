@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   container: {
+    marginTop: '10%',
     flex: 1,
     backgroundColor: '#ffffff',
   },
@@ -23,8 +24,8 @@ export default StyleSheet.create({
   textName: {
     fontSize: 25,
     fontWeight: 'bold',
-    color: 'black',
-    marginTop: 0,
+    color: '#4B0082',
+    marginTop: '2%',
   },
   textNumber: {
     fontWeight: 'bold',
@@ -55,7 +56,8 @@ export default StyleSheet.create({
     marginBottom: 10,
   },
   textSchool: {
-    fontSize: 10,
+    marginTop: '2%',
+    fontSize: 15,
     color: 'gray',
   },
 });
