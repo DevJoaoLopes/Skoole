@@ -1,14 +1,9 @@
 import React from 'react';
-import {
-  View,
-} from 'react-native';
-import styles from './styles';
-import Header from '../../../../assets/components/Header';
+import Navbar from '../../../../assets/components/Navbar';
 
-const Schedule = () => (
-  <View style={styles.container}>
-    <Header />
-
-  </View>
+const Schedule = ({ navigation }) => (
+  <>
+    <Navbar navigation={navigation} title="AGENDA DE ESTUDO" />
+  </ >
 );
 export default Schedule;

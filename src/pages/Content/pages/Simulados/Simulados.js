@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  View, Text, TouchableOpacity, ScrollView, Image, ImageBackground, ImageBackgroundBase
+  View, Text, TouchableOpacity, ScrollView, ImageBackground,
 } from 'react-native';
 import styles from './styles';
-import Header from '../../../../assets/components/Header';
+import Navbar from '../../../../assets/components/Navbar';
 import ENEM from '../../../../assets/images/ENEM.png';
 import FUVEST from '../../../../assets/images/FUVEST.png';
 import UNIVEM from '../../../../assets/images/UNIVEM.png';
@@ -12,12 +12,13 @@ import UENP from '../../../../assets/images/UENP.png';
 import UNICAMP from '../../../../assets/images/UNICAMP.png';
 
 const Simulados = ({ navigation }) => (
-  <View style={styles.container}>
-    <Header/>
-    <View style={{ flex: 10 }}>
+  <>
+    <Navbar navigation={navigation} title="SIMULADOS" />
+    <View style={styles.container}>
+      <View style={{ flex: 10 }}>
         <Text style={styles.vestText}>Vestibulares</Text>
         <ScrollView>
-          <View style={{flexDirection: 'row', }}>
+          <View style={{ flexDirection: 'row' }}>
             <TouchableOpacity onPress={() => navigation.navigate('EnemTests')}>
               <View style={styles.cards}>
                 <ImageBackground source={ENEM} style={styles.cardIcons}>
@@ -27,7 +28,6 @@ const Simulados = ({ navigation }) => (
                 </ImageBackground>
               </View>
             </TouchableOpacity>
-
             <TouchableOpacity>
               <View style={styles.cards}>
                 <ImageBackground source={FUVEST} style={styles.cardIcons}>
@@ -38,8 +38,7 @@ const Simulados = ({ navigation }) => (
               </View>
             </TouchableOpacity>
           </View>
-          
-          <View style={{flexDirection: 'row', }}>
+          <View style={{ flexDirection: 'row' }}>
             <TouchableOpacity>
               <View style={styles.cards}>
                 <ImageBackground source={UNIVEM} style={styles.cardIcons}>
@@ -49,7 +48,6 @@ const Simulados = ({ navigation }) => (
                 </ImageBackground>
               </View>
             </TouchableOpacity>
-
             <TouchableOpacity>
               <View style={styles.cards}>
                 <ImageBackground source={UEL} style={styles.cardIcons}>
@@ -60,8 +58,7 @@ const Simulados = ({ navigation }) => (
               </View>
             </TouchableOpacity>
           </View>
-
-          <View style={{flexDirection: 'row', }}>
+          <View style={{ flexDirection: 'row' }}>
             <TouchableOpacity>
               <View style={styles.cards}>
                 <ImageBackground source={UENP} style={styles.cardIcons}>
@@ -71,7 +68,6 @@ const Simulados = ({ navigation }) => (
                 </ImageBackground>
               </View>
             </TouchableOpacity>
-
             <TouchableOpacity>
               <View style={styles.cards}>
                 <ImageBackground source={UNICAMP} style={styles.cardIcons}>
@@ -83,7 +79,8 @@ const Simulados = ({ navigation }) => (
             </TouchableOpacity>
           </View>
         </ScrollView>
+      </View>
     </View>
-  </View>
+  </>
 );
 export default Simulados;
