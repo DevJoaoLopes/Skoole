@@ -7,7 +7,7 @@ import Navbar from '../../../../assets/components/Navbar';
 
 const Cronograma = ({ navigation }) => (
   <>
-    <Navbar navigation={navigation} title="CRONOGRAMA" noBack />
+    <Navbar navigation={navigation} title="CRONOGRAMA" />
     <View style={styles.container}>
 
       <View style={{ flex: 13 }}>

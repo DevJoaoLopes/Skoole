@@ -44,6 +44,6 @@ export default StyleSheet.create({
   image: {
     width: '40%',
     resizeMode: 'contain',
-    height: '80%',
+    height: '75%',
   },
 });
