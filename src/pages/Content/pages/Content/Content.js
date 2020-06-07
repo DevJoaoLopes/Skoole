@@ -8,7 +8,7 @@ import Exams from '../../../../assets/images/Exam.png';
 
 const Content = ({ navigation }) => (
   <>
-    <Navbar navigation={navigation} title="CONTEUDO" />
+    <Navbar navigation={navigation} title="CONTEUDO" noBack />
     <View style={styles.container}>
       <View style={{ flex: 10 }}>
         <ScrollView>
