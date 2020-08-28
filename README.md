@@ -1,5 +1,10 @@
 ![image info](./src/assets/components/Header/assets/images/logo_transparent.png "Skoole")
 
+[![GitHub stars](https://img.shields.io/github/stars/DevJoaoLopes/Skoole)](https://github.com/DevJoaoLopes/Skoole/stargazers)
+[![GitHub license](https://img.shields.io/github/license/DevJoaoLopes/Skoole)](https://github.com/DevJoaoLopes/Skoole)
+[![GitHub issues](https://img.shields.io/github/issues/DevJoaoLopes/Skoole)](https://github.com/DevJoaoLopes/Skoole/issues)
+[![GitHub forks](https://img.shields.io/github/forks/DevJoaoLopes/Skoole)](https://github.com/DevJoaoLopes/Skoole/network)
+
 ## Index
 
 - [Index](#tabela-de-conte%C3%BAdo)
