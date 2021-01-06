@@ -14,7 +14,7 @@
     "@react-navigation/core": "^5.0.0-alpha.15",
     "@react-navigation/native": "^5.4.0",
     "@react-navigation/stack": "^5.0.0-alpha.25",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "babel": "^6.23.0",
     "babel-plugin-import-glob": "^2.0.0",
     "humps": "^2.0.1",
